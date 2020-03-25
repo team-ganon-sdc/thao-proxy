@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: lightgrey;
+      }
+    </style>
   </head>
   <body>
-    <!-- <div id="root">Loading...</div> -->
-    <!-- <div id="app">Loading...</div> -->
-    <div id="review">Loading...</div>
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <div id="app1">Loading...</div>
+    <!-- <div id="app">Loading...</div> -->
+    <div id="review">Loading...</div>
     <!-- <script src="http://localhost:3001/dist/bundle.js"></script> -->
     <script src="http://localhost:3002/bundle.js"></script>
     <!-- <script src="http://localhost:3003/bundle.js"></script> -->
-    <!-- <script src="http://localhost:3004/bundle.js"></script> -->
+    <script src="http://localhost:3004/bundle.js"></script>
+    <script>
+      ReactDOM.render(
+        React.createElement(App1, {id: 2}),
+        document.getElementById('app1')
+      );
+      ReactDOM.render(
+        React.createElement(Review, {id: 2}),
+        document.getElementById('review')
+      );
+    </script>
   </body>
 </html>
